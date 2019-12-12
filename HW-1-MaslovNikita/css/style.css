@@ -1,10 +1,9 @@
-html{
-    overflow:  hidden;
-}
 body{
-    /*background: #003333;*/ 
-    background-image:radial-gradient(at top, #fefcea, #203240);
+    overflow: hidden;
+    background: #203240;
+    background-image:radial-gradient(circle 100vh at top, #b3b8be, #203240);
     height: 100vh;
+    background-repeat: no-repeat;
 }
 p{
     font-family: Arial, Helvetica, sans-serif; 
@@ -13,11 +12,48 @@ p{
     text-align: center;
     
 }
+.pforday{
+font-size: 40px; 
+text-align: none; 
+margin-bottom: 0px;
+}
+.zeromargin{
+    margin: 0px;
+}
+.pbiggradus{
+font-size: 140px; 
+text-align: none; 
+margin-bottom: 0px;
+}
+.pplace{
+font-size: 28px; 
+text-align: none; 
+margin-left: -30px;
+margin-top: -10px;
+}
+.divtoday{
+    margin-top: -10px; 
+    margin-left: 20px;
+}
+.imgdivtoday{
+    margin-top: -20px; 
+    margin-left: -15px;
+    float: left; 
+}
+.pdivtoday{
+    font-size: 28px; 
+    text-align: none; 
+    margin: 0px; 
+    float: left;
+}
 .mainbar{
     width: 600px;
     height: 337.5px;
     position: absolute;
     margin-left: 700px;
+}
+.pdaysbottombar{
+padding-top: 65px;
 }
 .mainbarday{
     position: relative;
@@ -27,7 +63,7 @@ p{
 .mainbartemp{
     position: relative;
     float: left;
-    margin-top: -60px;
+    margin-top: -35px;
     margin-left: 40px;
 }
 .boxForCity{
@@ -72,13 +108,20 @@ p{
     min-width: 225px;
     min-height: 155px;
     padding-top: -30px;
-
 }
-.border{ 
-    display: block;
-    border:0.5px solid #fff;
-    width: 0.25px;
-    margin-top: 22px;
+.day1{
+    position: relative;
+    min-width: 225px;
+    min-height: 155px;
+    padding-top: -30px;
+}
+div.day::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: #fff;
+    width: 1px;
+    margin-top: 25px;
     height: 110px;
 }
 .imgbutton{
@@ -89,6 +132,17 @@ p{
 }
 .weatherimg{
     position: absolute;
-    padding-left: 70px;
+    padding-left: 80px;
+    padding-bottom: 10px;
     bottom: 30px;
+    width: 60px;
+    height: 60px;
+}
+.weatherimgt{
+    position: absolute;
+    padding-left: 80px;
+    padding-bottom: 10px;
+    bottom: 30px;
+    width: 80px;
+    height: 60px;
 }
